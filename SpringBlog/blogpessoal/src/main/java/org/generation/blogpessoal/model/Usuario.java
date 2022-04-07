@@ -38,6 +38,18 @@ public class Usuario {
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagens;
 	
+	//metodos construtores para testes
+	//importante seguir a mesma ordem das declarações dos atributos de usuario acima
+	//construtor cheio
+	public Usuario(Long id, String nome, String usuario, String senha, String foto) {
+		this.id=id;
+		this.nome=nome;
+		this.usuario=usuario;
+		this.senha=senha;
+		this.foto=foto;
+	}
+	//construtor vazio
+	public Usuario() {}
 	
 	public List<Postagem> getPostagens() {
 		return postagens;
